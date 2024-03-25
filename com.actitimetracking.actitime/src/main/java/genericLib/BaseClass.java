@@ -15,6 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	public WebDriver driver;
 	public PropertyFile pdata=new PropertyFile();   //Method Calling Create an object (Non static method)
+//	public PropertyFile ldata=new PropertyFile();    //for get locators
 	public WebDriverUtilies utilies=new WebDriverUtilies();
 	
 	

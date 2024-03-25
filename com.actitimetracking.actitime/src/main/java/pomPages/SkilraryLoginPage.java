@@ -1,4 +1,4 @@
-package pomPages;
+ package pomPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +13,20 @@ public class SkilraryLoginPage {
 	@FindBy(xpath="(//a[text()=' SkillRary Demo APP'])[2]")
 	private WebElement demoApp;
 	
+	@FindBy(xpath="//a[text()=' SERVICES ']")
+	private WebElement Servicebutton;
+	
+	@FindBy(xpath="//a[text()=' SkillRary Business']")
+	private WebElement BusinessButton;
+	
+	@FindBy(xpath="//a[text()='Corporates']")
+	private WebElement Corporates;
+	
+	@FindBy(xpath="//a[text()='Course']")
+	private WebElement Course;
+	
+
+
 	public SkilraryLoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -24,5 +38,20 @@ public class SkilraryLoginPage {
 	public void skilrarydemoapp() {
 		demoApp.click();
 	}
+	public void Servicebutton() {
+		Servicebutton.click();
+	}
 
+	public void BusinessButton() {
+		 BusinessButton.click();
+	}
+	
+	public void CorporatesButton() {
+		Corporates.click();
+	}
+	
+	public void CourseButton() {
+		Course.click();
+	}
+	
 }

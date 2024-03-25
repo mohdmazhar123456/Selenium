@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class TestingPage {
 	
 	//Declaration
-	@FindBy(xpath="(//a[text()='munit testing '])[2]")
-	private WebElement munit;
+	@FindBy(xpath="(//img[@class='product'])[1]")
+	private WebElement java;
 	
 	@FindBy(id="cartArea")
 	private WebElement areacart;
@@ -23,7 +23,7 @@ public class TestingPage {
 	}
 
 	public WebElement getMunit() {
-		return munit;
+		return java;
 	}
 
 	public WebElement getAreacart() {

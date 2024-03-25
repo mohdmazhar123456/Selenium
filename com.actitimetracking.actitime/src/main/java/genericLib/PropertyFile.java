@@ -11,8 +11,13 @@ public class PropertyFile {
 	public String getPropertyFiledata(String key) throws IOException {
 		Properties p=new Properties();
 		FileInputStream fis=new FileInputStream(AutoConstant.propertyFilePath);
+		
+//		FileInputStream fis2 = new FileInputStream(AutoConstant.locatorpropertyFilePath);
+//		p.load(fis2);
+		
 		p.load(fis);
-		return p.getProperty(key);
+		return p.getProperty(key) ;
+		
 	}
 
 }

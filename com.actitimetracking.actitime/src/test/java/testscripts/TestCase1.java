@@ -22,7 +22,7 @@ public class TestCase1 extends BaseClass {
 		
 		AddtoCardPage ad=new AddtoCardPage(driver);
 		utilies.doubleClick(driver, ad.getAdd());
-		//utilies.alertPopUp(driver);         //no such alert pupup 
-	}
+		//utilies.alertPopUp(driver);                //no such alert pupup 
+	} 
 
 }

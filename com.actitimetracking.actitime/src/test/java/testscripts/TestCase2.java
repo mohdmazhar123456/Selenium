@@ -22,7 +22,7 @@ public class TestCase2 extends BaseClass{
 		SkilraryDempApp d=new SkilraryDempApp(driver);
 		utilies.switchingTabs(driver);
 		utilies.dropDown(d.getCoursedropd(),pdata.getPropertyFiledata("coursedropd"));
-		
+		   
 		TestingPage t=new TestingPage(driver);
 		utilies.dragAndDrop(driver, t.getMunit(), t.getAreacart());
 		WebElement facebook = t.getFb();
